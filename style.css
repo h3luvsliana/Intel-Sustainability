@@ -1,1 +1,49 @@
-/* Add your CSS here */
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #abcad8;
+}
+
+header {
+  background-color: #337549;
+  color: #fff;
+  padding: 3rem;
+  text-align: center;
+}
+
+.Timeline {
+  display: flex;
+  overflow-x: auto;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: #97af9f;
+  color: #e3edf1;
+}
+
+.Card {
+  background-color: #e3edf1;
+  color: #337549;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 200px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Card p {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.Card:hover p {
+  opacity: 1;
+}
+
+.Card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Card h2, .Card h3 {
+  text-align: center;
+
+}
